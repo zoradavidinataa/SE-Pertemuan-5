@@ -3,6 +3,7 @@
   --brand-maroon-light: #a43a64;
   --brand-dark: #1a0c14;
   --brand-text: #2d1e27;
+  --brand-green: #10b981;
 }
 
 body {
@@ -63,6 +64,51 @@ body {
   background: var(--brand-maroon-light);
   border-color: var(--brand-maroon-light);
   color: #fff;
+}
+
+/* ── Services ───────────────────────────────────────── */
+#services {
+  background: #fcf7f9;
+}
+
+.service-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(111, 29, 59, 0.12);
+  color: var(--brand-maroon);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+/* ── About ──────────────────────────────────────────── */
+#about .about-img-wrap {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a0c14, #4c1f32);
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-check {
+  color: var(--brand-maroon);
 }
 
 /* ── Footer ─────────────────────────────────────────── */
